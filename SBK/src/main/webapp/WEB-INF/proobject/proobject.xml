@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<po:proobject xmlns:po="http://www.tmax.co.kr/proobject/meta">
+  <po:application-name>SBK</po:application-name>
+  <po:servicegroup-meta resourceName="ServiceGroup" resourcePackage="com.so.controller" serviceGroupName="ServiceGroup">
+    <po:service-resource resourceName="SelectService" resourcePackage="com.so.service.crud">
+      <po:service-meta>
+        <po:service-name>SelectService_service</po:service-name>
+        <po:service-method-name>selectService</po:service-method-name>
+        <po:service-input-type resourceName="MultiSelect" resourcePackage="com.so.dto.MultiSelect" resourcePath="com/so/dto/MultiSelect"/>
+        <po:service-output-type resourceName="MultiSelect" resourcePackage="com.so.dto.MultiSelect" resourcePath="com/so/dto/MultiSelect"/>
+        <po:transaction-property>
+          <value>nonXaTransactionManager</value>
+          <isolation-level>ISOLATION_DEFAULT</isolation-level>
+          <propagation-behavior>PROPAGATION_REQUIRED</propagation-behavior>
+          <timeout>-1</timeout>
+          <read-only>false</read-only>
+        </po:transaction-property>
+        <po:urlMapping restType="POST" url="/SBK/ServiceGroup/SelectService_service"/>
+        <po:messageTypes>
+          <po:messageType>JSON</po:messageType>
+        </po:messageTypes>
+      </po:service-meta>
+      <po:exclude-source-generation>false</po:exclude-source-generation>
+    </po:service-resource>
+    <po:service-resource resourceName="InsertService" resourcePackage="com.so.service.crud">
+      <po:service-meta>
+        <po:service-name>InsertService_service</po:service-name>
+        <po:service-method-name>insertService</po:service-method-name>
+        <po:service-input-type resourceName="MultiInsert" resourcePackage="com.so.dto.MultiInsert" resourcePath="com/so/dto/MultiInsert"/>
+        <po:service-output-type resourceName="MultiInsert" resourcePackage="com.so.dto.MultiInsert" resourcePath="com/so/dto/MultiInsert"/>
+        <po:transaction-property>
+          <value>xaTransactionManager1</value>
+          <isolation-level>ISOLATION_DEFAULT</isolation-level>
+          <propagation-behavior>PROPAGATION_REQUIRED</propagation-behavior>
+          <timeout>-1</timeout>
+          <read-only>false</read-only>
+        </po:transaction-property>
+        <po:urlMapping restType="POST" url="/SBK/ServiceGroup/InsertService_service"/>
+        <po:messageTypes>
+          <po:messageType>JSON</po:messageType>
+        </po:messageTypes>
+      </po:service-meta>
+      <po:exclude-source-generation>false</po:exclude-source-generation>
+    </po:service-resource>
+    <po:service-resource resourceName="UpdateService" resourcePackage="com.so.service.crud">
+      <po:service-meta>
+        <po:service-name>UpdateService_service</po:service-name>
+        <po:service-method-name>updateService</po:service-method-name>
+        <po:service-input-type resourceName="MultiUpdate" resourcePackage="com.so.dto.MultiUpdate" resourcePath="com/so/dto/MultiUpdate"/>
+        <po:service-output-type resourceName="MultiUpdate" resourcePackage="com.so.dto.MultiUpdate" resourcePath="com/so/dto/MultiUpdate"/>
+        <po:transaction-property>
+          <value>xaTransactionManager2</value>
+          <isolation-level>ISOLATION_DEFAULT</isolation-level>
+          <propagation-behavior>PROPAGATION_REQUIRED</propagation-behavior>
+          <timeout>-1</timeout>
+          <read-only>false</read-only>
+        </po:transaction-property>
+        <po:urlMapping restType="POST" url="/SBK/ServiceGroup/UpdateService_service"/>
+        <po:messageTypes>
+          <po:messageType>JSON</po:messageType>
+        </po:messageTypes>
+      </po:service-meta>
+      <po:exclude-source-generation>false</po:exclude-source-generation>
+    </po:service-resource>
+    <po:service-resource resourceName="DeleteService" resourcePackage="com.so.service.crud">
+      <po:service-meta>
+        <po:service-name>DeleteService_service</po:service-name>
+        <po:service-method-name>deleteService</po:service-method-name>
+        <po:service-input-type resourceName="MultiDelete" resourcePackage="com.so.dto.MultiDelete" resourcePath="com/so/dto/MultiDelete"/>
+        <po:service-output-type resourceName="MultiDelete" resourcePackage="com.so.dto.MultiDelete" resourcePath="com/so/dto/MultiDelete"/>
+        <po:transaction-property>
+          <value>nonXaTransactionManager</value>
+          <isolation-level>ISOLATION_DEFAULT</isolation-level>
+          <propagation-behavior>PROPAGATION_REQUIRED</propagation-behavior>
+          <timeout>-1</timeout>
+          <read-only>false</read-only>
+        </po:transaction-property>
+        <po:urlMapping restType="POST" url="/SBK/ServiceGroup/DeleteService_service"/>
+        <po:messageTypes>
+          <po:messageType>JSON</po:messageType>
+        </po:messageTypes>
+      </po:service-meta>
+      <po:exclude-source-generation>false</po:exclude-source-generation>
+    </po:service-resource>
+  </po:servicegroup-meta>
+</po:proobject>

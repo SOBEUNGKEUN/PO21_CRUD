@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SBK
+  profiles:
+    active: test
+  cloud:
+    config:
+      enabled: false    
+spring.main.allow-bean-definition-overriding : true

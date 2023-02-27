@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.so.mapper.mapperBizNonXa.SoBizNonXaA"><select id="selectEmp01" resultType="com.so.dto.MultiSelect.SelectDTO" parameterType="com.so.dto.MultiSelect.SelectDTO">
+SELECT empno, ename
+FROM EMP
+WHERE 1=1
+</select>
+<delete id="deleteEmp04" parameterType="com.so.dto.MultiDelete.DeleteDTO">
+DELETE FROM EMP
+WHERE empno = #{empno}
+</delete>
+</mapper>
